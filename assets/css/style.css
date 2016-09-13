@@ -1,0 +1,66 @@
+/* ---------------------------------------------------------------------- */
+
+
+/*  Forms
+/* ---------------------------------------------------------------------- */
+
+fieldset {
+	background: #ffffff;
+	border: 1px solid #e6e8e8;
+	border-radius: 5px;
+	margin: 20px 0 20px 0;
+	padding: 25px;
+	position: relative;
+}
+
+fieldset .form-group {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+legend {
+	color: inherit;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+fieldset legend {
+	background: inherit;
+	font-family: "Lato", sans-serif;
+	color: #007AFF;
+	font-size: 15px;
+	left: 10px;
+	padding: 0 10px;
+	position: absolute;
+	top: -12px;
+	font-weight: 400;
+	width: auto !important;
+	border: none !important;
+}
+
+/*Custom Styles*/
+.float-right{
+	float: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*Headings*/
+
+
+/*Sample Image*/
+
+.sample-img {
+	background-image: url(../images/sample.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	pointer-events: none;
+	position: relative;
+	height: 60%;
+}
+
+
+
