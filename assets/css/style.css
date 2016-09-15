@@ -38,13 +38,23 @@ fieldset legend {
 	border: none !important;
 }
 
+
 /*Custom Styles*/
-.float-right{
+
+.float-right {
 	float: right;
 }
 
-.text-center{
+.text-center {
 	text-align: center;
+}
+
+.bg-grey{
+	background: #efefef;
+}
+
+.border-black{
+	border: 1px solid #2d2d2d;
 }
 
 /*Headings*/
@@ -63,4 +73,26 @@ fieldset legend {
 }
 
 
+/*DropDowns*/
 
+.btn-input {
+	display: block;
+}
+
+.btn-input .btn.form-control {
+	text-align: left;
+}
+
+.btn-input .btn.form-control span:first-child {
+	left: 10px;
+	overflow: hidden;
+	position: absolute;
+	right: 25px;
+}
+
+.btn-input .btn.form-control .caret {
+	margin-top: -1px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+}
