@@ -32,16 +32,19 @@
 				<h3 class="text-justify"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit </h3>
 			</div>
 		</div>
+		<div class="row general_bg_cover cover_home"></div>
+		<br/>
 
 		<form name="Form">
 
 			<!--Initial Details-->
-			<div class="row">
-				<div class="col-md-5 sample-img"></div>
-				<div class="col-md-7">
-					<fieldset>
+			<div class="row bg-grey">
+				<h1 class="text-center"> Application Details </h1>
+				<div class="col-md-6 application_details general_bg_cover"></div>
+				<div class="col-md-6">
+					<fieldset class="bg-grey border-black">
 						<legend>
-							Application Details
+							Basic Details
 						</legend>
 						<div class="col-md-12">
 							<div class="form-group">
@@ -97,124 +100,178 @@
 				</div>
 			</div>
 
-			<!--Part 1 : Family Head and Contact Deatils:start-->
+			<!--Part 1 : Family Head Deatils:start-->
 			<a id="familyHeadDeatils"></a>
-			<h1 class="text-center"> Part -1 : Family Details </h1>
-			<div class="row bg-grey">
+			<h1 class="text-center"> Part -1 : Family Head Details </h1>
+			<div class="row">
 				<div class="col-md-6">
-					<fieldset class="bg-grey border-black">
+					<fieldset class="">
 						<legend>
-							Family Head &amp; Contact Details
+							Family Head Details
 						</legend>
 						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Name of head of the family </span>
-									</label>
-									<input type="text" placeholder="Enter Name of head of the family" class="form-control" name="familyHeadName">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
 										<label class="control-label">
-											<span> Sex  </span>
+											<span> Name of head of the family </span>
 										</label>
+										<input type="text" placeholder="Enter Name of head of the family" class="form-control" name="familyHeadName">
 									</div>
-									<div>
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Male </a></li>
-												<li><a href="#"> Female </a></li>
-												<li><a href="#"> Transgender</a></li>
-											</ul>
+								</div>
+
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label class="control-label">
+												<span> Sex  </span>
+											</label>
+										</div>
+										<div class="col-md-12">
+											<div class="btn-group">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+													<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#"> Male </a></li>
+													<li><a href="#"> Female </a></li>
+													<li><a href="#"> Transgender</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Father's Name </span>
-									</label>
-									<input type="text" placeholder="Enter Father's Name" class="form-control" name="fathername">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Father's Name </span>
+										</label>
+										<input type="text" placeholder="Enter Father's Name" class="form-control" name="fathername">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Age of head of the family </span>
-									</label>
-									<input type="text" placeholder="Enter Age of head of the family" class="form-control" name="headAge">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Age of head of the family </span>
+										</label>
+										<input type="text" placeholder="Enter Age of head of the family" class="form-control" name="headAge">
+									</div>
 								</div>
 							</div>
 
 							<div class="col-md-12">
-								<fieldset class="bg-grey border-black">
-									<legend>
-										Permanent Address
-									</legend>
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="control-label">
-													<span> House/Flat/Door Number </span>
-												</label>
-												<input type="text" placeholder="Enter House/Flat/Door Number" class="form-control" name="houseNo">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="control-label">
-													<span> Name of the Street </span>
-												</label>
-												<input type="text" placeholder="Enter Name of the Street" class="form-control" name="nameOfStreet">
-											</div>
-										</div>
-
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="control-label">
-													<span> City </span>
-												</label>
-												<input type="text" placeholder="Enter City" class="form-control" name="city">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="control-label">
-													<span> District </span>
-												</label>
-												<input type="text" placeholder="Enter District" class="form-control" name="district">
-											</div>
-										</div>
-
-										<div class="col-md-6">
-											<div class="form-group">
-												<label class="control-label">
-													<span> State </span>
-												</label>
-												<input type="text" placeholder="Enter State" class="form-control" name="state">
-											</div>
-										</div>
-									</div>
-								</fieldset>
+								<div class="form-group">
+									<label class="control-label">
+										<span> Aadhar Card Number or VoterId Card or any other UID </span>
+									</label>
+									<input type="text" placeholder="Enter Aadhar Card Number or VoterId Card or any other" class="form-control" name="uid">
+								</div>
 							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Religion : </span>
+									</label>
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#"> Hindu </a></li>
+											<li><a href="#"> Muslim </a></li>
+											<li><a href="#"> Christian </a></li>
+											<li><a href="#"> Sikh </a></li>
+											<li><a href="#"> Jainism </a></li>
+											<li><a href="#"> Buddhism </a></li>
+											<li><a href="#"> Zorostrianism </a></li>
+											<li><a href="#"> Others </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Caste : </span>
+									</label>
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#"> General </a></li>
+											<li><a href="#"> SC </a></li>
+											<li><a href="#"> ST </a></li>
+											<li><a href="#"> OBC </a></li>
+											<li><a href="#"> VJ </a></li>
+											<li><a href="#"> NT(B) </a></li>
+											<li><a href="#"> NT(C) </a></li>
+											<li><a href="#"> NT(D) </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Whether Person with Disability(Yes/No)? </span>
+									</label>
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#"> Yes </a></li>
+											<li><a href="#"> No </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Maritial Status : </span>
+									</label>
+									<div class="btn-group">
+										<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+											<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#"> Married </a></li>
+											<li><a href="#"> Unmarried </a></li>
+											<li><a href="#"> Single Womam/Widow </a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<a class="btn btn-primary pull-right" href="#conatctDeatils"> Next </a>
 						</div>
 					</fieldset>
 				</div>
+				<div class="col-md-6 general_bg_cover familyDetails_cover"></div>
+			</div>
+			<!--Part 1 : Family Head Details:end-->
+			<!--Part 1 : Contact Deatils:start-->
+			<a id="conatctDeatils"></a>
+			<h1 class="text-center"> Part -1 : Contact Details </h1>
+			<div class="row bg-grey">
+				<div class="col-md-6 general_bg_cover conatctDetails_cover"></div>
 				<div class="col-md-6">
 					<fieldset class="bg-grey border-black">
 						<legend>
 							Personal Details
 						</legend>
 						<div class="col-md-12">
-							<fieldset class="bg-grey border-black">
+							<fieldset  class="bg-grey border-black">
 								<legend>
 									Contact Details
 								</legend>
@@ -238,501 +295,71 @@
 								</div>
 							</fieldset>
 						</div>
-						<div class="col-md-12">
-							<div class="form-group">
-								<label class="control-label">
-									<span> Aadhar Card Number or VoterId Card or any other UID </span>
-								</label>
-								<input type="text" placeholder="Enter Aadhar Card Number or VoterId Card or any other" class="form-control" name="uid">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">
-									<span> Religion : </span>
-								</label>
-								<div class="btn-group">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#"> Hindu </a></li>
-										<li><a href="#"> Muslim </a></li>
-										<li><a href="#"> Christian </a></li>
-										<li><a href="#"> Sikh </a></li>
-										<li><a href="#"> Jainism </a></li>
-										<li><a href="#"> Buddhism </a></li>
-										<li><a href="#"> Zorostrianism </a></li>
-										<li><a href="#"> Others </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">
-									<span> Caste : </span>
-								</label>
-								<div class="btn-group">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#"> General </a></li>
-										<li><a href="#"> SC </a></li>
-										<li><a href="#"> ST </a></li>
-										<li><a href="#"> OBC </a></li>
-										<li><a href="#"> VJ </a></li>
-										<li><a href="#"> NT(B) </a></li>
-										<li><a href="#"> NT(C) </a></li>
-										<li><a href="#"> NT(D) </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">
-									<span> Whether Person with Disability(Yes/No)? </span>
-								</label>
-								<div class="btn-group">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#"> Yes </a></li>
-										<li><a href="#"> No </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">
-									<span> Maritial Status : </span>
-								</label>
-								<div class="btn-group">
-									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-										<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu">
-										<li><a href="#"> Married </a></li>
-										<li><a href="#"> Unmarried </a></li>
-										<li><a href="#"> Single Womam/Widow </a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
 
 						<div class="col-md-12">
-							<a class="btn btn-primary pull-right" href="#otherDetails"> Next </a>
-						</div>
-					</fieldset>
-				</div>
-			</div>
-			<!--Part 1 : Family Head and Contact Deatils:end-->
-
-			<!--Part 1 : Other Deatils:start-->
-			<a id="otherDetails"></a>
-			<h1 class="text-center"> Part -1 Other Details</h1>
-			<div class="row">
-				<div class="col-md-12">
-					<fieldset>
-						<legend>
-							Other Details
-						</legend>
-						<fieldset>
-							<legend>
-								Family Member Details
-							</legend>
-							<table id="memberTable" class="table table-bordered">
-								<thead>
-									<th>
-
-									</th>
-									<th>
-										Name of Member
-									</th>
-									<th>
-										Relationship to head of family
-									</th>
-									<th>
-										Gender
-									</th>
-									<th>
-										Age
-									</th>
-									<th>
-										Any UID Number(Aadhar/Voter)
-									</th>
-								</thead>
-								<tbody>
-									<td>
-										<input type="checkbox" name="chkDelete">
-									</td>
-									<td>
+							<fieldset  class="bg-grey border-black">
+								<legend>
+									Permanent Address
+								</legend>
+								<div class="row">
+									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" placeholder="Member Name" class="form-control" name="nameOfMember">
-										</div>
-									</td>
-									<td>
-										<div class="form-group">
-											<input type="text" placeholder="Member Name" class="form-control" name="relationship">
-										</div>
-									</td>
-									<td>
-										<div class="form-group">
-											<input type="text" placeholder="Member Name" class="form-control" name="gender">
-										</div>
-									</td>
-									<td>
-										<div class="form-group">
-											<input type="text" placeholder="Member Name" class="form-control" name="age">
-										</div>
-									</td>
-									<td>
-										<div class="form-group">
-											<input type="text" placeholder="Member Name" class="form-control" name="uidNo">
-										</div>
-									</td>
-								</tbody>
-							</table>
-							<div class="col-md-12">
-								<button class="btn btn-success" type="button" onclick="addMember('memberTable')"> Add Member(s) </button>
-								<button class="btn btn-danger" type="button" onclick="deleteMember('memberTable')"> Delete Member(s) </button>
-							</div>
-						</fieldset>
-
-						<fieldset>
-							<legend>
-								Other Details
-							</legend>
-							<div class="row">
-								<div class="col-md-4">
-									<div class="form-group">
-										<div class="col-md-8">
 											<label class="control-label">
-												<span> Whether the family own any house/ residential land anywhere in India(Yes/No)? </span>
+												<span> House/Flat/Door Number </span>
 											</label>
-										</div>
-										<div class="col-md-4">
-											<div class="btn-group">
-												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-													<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-												</button>
-												<ul class="dropdown-menu" role="menu">
-													<li><a href="#"> Yes </a></li>
-													<li><a href="#"> No </a></li>
-												</ul>
-											</div>
+											<input type="text" placeholder="Enter House/Flat/Door Number" class="form-control" name="houseNo">
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label class="control-label">
-											<span> If Yes, then the location details (State/City/Locality) </span>
-										</label>
-										<input type="text" placeholder="Enter land location" class="form-control" name="landLocation">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">
+												<span> Name of the Street </span>
+											</label>
+											<input type="text" placeholder="Enter Name of the Street" class="form-control" name="nameOfStreet">
+										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label class="control-label">
-											<span> If Yes, then extent of land in sq. mts. </span>
-										</label>
-										<input type="text" placeholder="Enter land Extent" class="form-control" name="landExtent">
-									</div>
-								</div>
-							</div>
 
-							<div class="row">
-								<div class="col-md-4">
-									<div class="col-md-8">
-										<label class="control-label">
-											<span> Ownership details of existing house </span>
-										</label>
-									</div>
-									<div class="col-md-4">
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Own </a></li>
-												<li><a href="#"> Rent </a></li>
-												<li><a href="#"> Encrochment </a></li>
-											</ul>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">
+												<span> City </span>
+											</label>
+											<input type="text" placeholder="Enter City" class="form-control" name="city">
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="form-group">
-										<label class="control-label">
-											<span> Size of existing dwelling unit (carpet area in sq.mt.) </span>
-										</label>
-										<input type="text" placeholder="Enter Size of existing dwelling unit" class="form-control" name="sizeExistingUnit">
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="col-md-8">
-										<label class="control-label">
-											<span> Type / Structure of the house </span>
-										</label>
-									</div>
-									<div class="col-md-4">
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Pucca </a></li>
-												<li><a href="#"> Semi-Pucca </a></li>
-												<li><a href="#"> Katcha </a></li>
-											</ul>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">
+												<span> District </span>
+											</label>
+											<input type="text" placeholder="Enter District" class="form-control" name="district">
 										</div>
 									</div>
-								</div>
-							</div>
 
-							<div class="row">
-								<div class="col-md-4">
-									<div class="col-md-8">
-										<label class="control-label">
-											<span> Type of roof </span>
-										</label>
-									</div>
-									<div class="col-md-4">
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Grass/Thatched </a></li>
-												<li><a href="#"> Tarpaulin </a></li>
-												<li><a href="#"> Wooden </a></li>
-												<li><a href="#"> Asbestos </a></li>
-												<li><a href="#"> Tiled </a></li>
-												<li><a href="#"> Cement/SIB </a></li>
-												<li><a href="#"> Other </a></li>
-											</ul>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class="control-label">
+												<span> State </span>
+											</label>
+											<input type="text" placeholder="Enter State" class="form-control" name="state">
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4">
-									<div class="col-md-8">
-										<label class="control-label">
-											<span> Toilet facility </span>
-										</label>
-									</div>
-									<div class="col-md-4">
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Within Premisis </a></li>
-												<li><a href="#"> Outside Premisis </a></li>
-												<li><a href="#"> Community Bathrom </a></li>
-												<li><a href="#"> Open defecation/No Bathroom </a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4">
-									<div class="col-md-8">
-										<label class="control-label">
-											<span> Bathroom facility </span>
-										</label>
-									</div>
-									<div class="col-md-4">
-										<div class="btn-group">
-											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="#"> Within Premisis </a></li>
-												<li><a href="#"> Outside Premisis </a></li>
-												<li><a href="#"> Community Bathrom </a></li>
-												<li><a href="#"> No Bathroom </a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</fieldset>
+							</fieldset>
+						</div>
 
 						<div class="col-md-12">
-							<a class="btn btn-primary float-right" href="#part2"> Next </a>
+							<button type="button" onclick="nextPage()" class="btn btn-primary pull-right" > Next </button>
 						</div>
 					</fieldset>
 				</div>
 			</div>
-			<!--Part 1 : Family Member Deatils:end-->
-			<!--Part 2: start-->
-			<a id="part2"></a>
-			<h1 class="text-center"> Part -2 </h1>
-			<div class="row bg-grey">
-				<div class='col-md-6'>
-					<fieldset class="bg-grey border-black">
-						<legend>
-							Proof of family
-						</legend>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Date from which slum dweller is residing in present hut </span>
-									</label>
-									<div class='input-group date' id='datetimepicker2'>
-										<input type='text' class="form-control" />
-										<span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Photograph of Husband &amp; Wife </span>
-									</label>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="control-label">
-											<span> Husband's Photo</span>
-										</label>
-										<input type="file" class="form-control" name="husbandPhoto">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="control-label">
-											<span> Wife's Photo</span>
-										</label>
-										<input type="file" class="form-control" name="wifePhoto">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Proof of hut existance or before 01/01/2000 to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Latest recent one year proof of slum dweller actually residing in hut to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> The consent or rent/leave &amp; licence made on stam paper by earlier slum dweller residing at present to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
-				<div class='col-md-6'>
-					<fieldset class="bg-grey border-black">
-						<legend>
-							Proof of family
-						</legend>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Date from which slum dweller is residing in present hut </span>
-									</label>
-									<div class='input-group date' id='datetimepicker2'>
-										<input type='text' class="form-control" />
-										<span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-										</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Photograph of Husband &amp; Wife </span>
-									</label>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="control-label">
-											<span> Husband's Photo</span>
-										</label>
-										<input type="file" class="form-control" name="husbandPhoto">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="control-label">
-											<span> Wife's Photo</span>
-										</label>
-										<input type="file" class="form-control" name="wifePhoto">
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Proof of hut existance or before 01/01/2000 to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> Latest recent one year proof of slum dweller actually residing in hut to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="control-label">
-										<span> The consent or rent/leave &amp; licence made on stam paper by earlier slum dweller residing at present to be attached </span>
-									</label>
-									<input type="file" class="form-control" name="proofHut">
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-			</div>
-			<!--Part 2: end-->
+			<!--Part 1 : Contact Deatils:end-->
 		</form>
-
-
 	</div>
 
-
-	<!--DatePicker js-->
-	<script src="assets/js/datepicker.js" type="text/javascript"></script>
-	<!--Table Row Addition js-->
-	<script src="assets/js/memberTable.js" type="text/javascript"></script>
-	<!--Dropdown js-->
-	<script src="assets/js/dropdown.js" type="text/javascript"></script>
+	<!--Custom Script-->
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>

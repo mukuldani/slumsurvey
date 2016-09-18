@@ -1,0 +1,452 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Slum Survey </title>
+	<!-- Bootstrap CSS -->
+	<link href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="vendor/datepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="vendor/bootstrap-3.3.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
+	<!--Moment js-->
+	<script src="vendor/moment/moment.min.js" type="text/javascript"></script>
+	<!--Bootstrap datepicker-->
+	<script src="vendor/datepicker/bootstrap-datepicker.js"></script>
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1> Welcome to Slum Survey </h1>
+			</div>
+			<div class="col-md-10 col-md-offset-1">
+				<h3 class="text-justify"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit </h3>
+			</div>
+		</div>
+		<div class="row general_bg_cover otherDetails_cover"></div>
+		<br/>
+
+		<form name="Form">
+			<!--Part 1 : Other Deatils:start-->
+			<a id="otherDetails"></a>
+			<h1 class="text-center"> Part -1 Other Details</h1>
+			<div class="row">
+				<div class="col-md-12">
+					<fieldset>
+						<legend>
+							Other Details
+						</legend>
+						<fieldset>
+							<legend>
+								Family Member Details
+							</legend>
+							<table id="memberTable" class="table table-bordered">
+								<thead>
+									<th>
+
+									</th>
+									<th>
+										Name of Member
+									</th>
+									<th>
+										Relationship to head of family
+									</th>
+									<th>
+										Gender
+									</th>
+									<th>
+										Age
+									</th>
+									<th>
+										Any UID Number(Aadhar/Voter)
+									</th>
+								</thead>
+								<tbody>
+									<td>
+										<input type="checkbox" name="chkDelete">
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="text" placeholder="Member Name" class="form-control" name="nameOfMember">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="text" placeholder="Member Name" class="form-control" name="relationship">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="text" placeholder="Member Name" class="form-control" name="gender">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="text" placeholder="Member Name" class="form-control" name="age">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="text" placeholder="Member Name" class="form-control" name="uidNo">
+										</div>
+									</td>
+								</tbody>
+							</table>
+							<div class="col-md-12">
+								<button class="btn btn-success" type="button" onclick="addMember('memberTable')"> Add Member(s) </button>
+								<button class="btn btn-danger" type="button" onclick="deleteMember('memberTable')"> Delete Member(s) </button>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>
+								Other Details
+							</legend>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<div class="col-md-8">
+											<label class="control-label">
+												<span> Whether the family own any house/ residential land anywhere in India(Yes/No)? </span>
+											</label>
+										</div>
+										<div class="col-md-4">
+											<div class="btn-group">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+													<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#"> Yes </a></li>
+													<li><a href="#"> No </a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											<span> If Yes, then the location details (State/City/Locality) </span>
+										</label>
+										<input type="text" placeholder="Enter land location" class="form-control" name="landLocation">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											<span> If Yes, then extent of land in sq. mts. </span>
+										</label>
+										<input type="text" placeholder="Enter land Extent" class="form-control" name="landExtent">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<div class="col-md-8">
+										<label class="control-label">
+											<span> Ownership details of existing house </span>
+										</label>
+									</div>
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#"> Own </a></li>
+												<li><a href="#"> Rent </a></li>
+												<li><a href="#"> Encrochment </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Size of existing dwelling unit (carpet area in sq.mt.) </span>
+										</label>
+										<input type="text" placeholder="Enter Size of existing dwelling unit" class="form-control" name="sizeExistingUnit">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="col-md-8">
+										<label class="control-label">
+											<span> Type / Structure of the house </span>
+										</label>
+									</div>
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#"> Pucca </a></li>
+												<li><a href="#"> Semi-Pucca </a></li>
+												<li><a href="#"> Katcha </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-4">
+									<div class="col-md-8">
+										<label class="control-label">
+											<span> Type of roof </span>
+										</label>
+									</div>
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#"> Grass/Thatched </a></li>
+												<li><a href="#"> Tarpaulin </a></li>
+												<li><a href="#"> Wooden </a></li>
+												<li><a href="#"> Asbestos </a></li>
+												<li><a href="#"> Tiled </a></li>
+												<li><a href="#"> Cement/SIB </a></li>
+												<li><a href="#"> Other </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="col-md-8">
+										<label class="control-label">
+											<span> Toilet facility </span>
+										</label>
+									</div>
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#"> Within Premisis </a></li>
+												<li><a href="#"> Outside Premisis </a></li>
+												<li><a href="#"> Community Bathrom </a></li>
+												<li><a href="#"> Open defecation/No Bathroom </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="col-md-8">
+										<label class="control-label">
+											<span> Bathroom facility </span>
+										</label>
+									</div>
+									<div class="col-md-4">
+										<div class="btn-group">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+												<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#"> Within Premisis </a></li>
+												<li><a href="#"> Outside Premisis </a></li>
+												<li><a href="#"> Community Bathrom </a></li>
+												<li><a href="#"> No Bathroom </a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+
+						<div class="col-md-12">
+							<a class="btn btn-primary float-right" href="#part2"> Next </a>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<!--Part 1 : Family Member Deatils:end-->
+			<!--Part 2: Other Details-1:start-->
+			<a id="part2"></a>
+			<h1 class="text-center"> Part - 2 </h1>
+			<div class="row bg-grey">
+				<div class='col-md-6'>
+					<fieldset class="bg-grey border-black">
+						<legend>
+							Proof of family
+						</legend>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Date from which slum dweller is residing in present hut </span>
+									</label>
+									<div class='input-group date' id='datetimepicker2'>
+										<input type='text' class="form-control" />
+										<span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Photograph of Husband &amp; Wife </span>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Husband's Photo</span>
+										</label>
+										<input type="file" class="form-control" name="husbandPhoto">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Wife's Photo</span>
+										</label>
+										<input type="file" class="form-control" name="wifePhoto">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Proof of hut existance or before 01/01/2000 to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Latest recent one year proof of slum dweller actually residing in hut to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> The consent or rent/leave &amp; licence made on stam paper by earlier slum dweller residing at present to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<a class="btn btn-primary float-right" href="#part2Other"> Next </a>
+						</div>
+					</fieldset>
+				</div>
+				<div class="col-md-6 general_bg_cover proof_family_cover1"></div>
+
+
+			</div>
+			<!--Part 2: Other Details-1: end-->
+			<!--Part 2: Other Details-2:start-->
+			<a id="part2Other"></a>
+			<h1 class="text-center"> Part-2 </h1>
+			<div class="row">
+				<div class="col-md-6 general_bg_cover proof_family_cover2"></div>
+				<div class='col-md-6'>
+					<fieldset>
+						<legend>
+							Proof of family
+						</legend>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Date from which slum dweller is residing in present hut </span>
+									</label>
+									<div class='input-group date' id='datetimepicker2'>
+										<input type='text' class="form-control" />
+										<span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Photograph of Husband &amp; Wife </span>
+									</label>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Husband's Photo</span>
+										</label>
+										<input type="file" class="form-control" name="husbandPhoto">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label">
+											<span> Wife's Photo</span>
+										</label>
+										<input type="file" class="form-control" name="wifePhoto">
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Proof of hut existance or before 01/01/2000 to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> Latest recent one year proof of slum dweller actually residing in hut to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group">
+									<label class="control-label">
+										<span> The consent or rent/leave &amp; licence made on stam paper by earlier slum dweller residing at present to be attached </span>
+									</label>
+									<input type="file" class="form-control" name="proofHut">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-primary pull-right"> Submit </button>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<!--Part 2: Other Details-2:end-->
+		</form>
+	</div>
+	
+	
+	<!--Custom Script-->
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -49,28 +49,74 @@ fieldset legend {
 	text-align: center;
 }
 
-.bg-grey{
+.bg-grey {
 	background: #efefef;
 }
 
-.border-black{
+.border-black {
 	border: 1px solid #2d2d2d;
 }
+
 
 /*Headings*/
 
 
-/*Sample Image*/
+/*General Background Image Class*/
 
-.sample-img {
-	background-image: url(../images/sample.jpg);
+.general_bg_cover {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	pointer-events: none;
 	position: relative;
-	height: 60%;
 }
+
+
+/*Application Details Bg-cover*/
+
+.application_details {
+	background-image: url(../images/slum1.jpeg);
+	height: 326px;
+}
+
+
+/*Home Cover Image*/
+.cover_home {
+	background-image: url(../images/slum5.jpe);
+	height: 369px;
+}
+
+/*Proof of Family Cover*/
+.proof_family_cover1{
+	background-image: url(../images/slum3.jpe);
+	height: 500px;
+}
+
+.proof_family_cover2{
+	background-image: url(../images/slum7.jpg);
+	height: 527px;
+}
+
+
+/*Other Details Cover*/
+
+.otherDetails_cover {
+	background-image: url(../images/slum4.jpe);
+	height: 437px;
+}
+
+/*Family Details Cover*/
+.familyDetails_cover{
+	background-image: url(../images/slum12.jpg);
+	height: 412px;
+}
+
+/*Conatct Details*/
+.conatctDetails_cover{
+	background-image: url(../images/slum11.jpg);
+	height: 430px;
+}
+
 
 
 /*DropDowns*/
